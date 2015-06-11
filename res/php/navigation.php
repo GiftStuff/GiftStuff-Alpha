@@ -1,6 +1,14 @@
+<?php
+
+function getActivePage($input) {
+    global $page;
+    if ($input == $page) {
+	echo ' class="active"';
+    }
+}
+?>
 <div class="navbar-wrapper">
     <div class="container">
-
         <nav class="navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -14,21 +22,9 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li<?php
-                        if ("home" == $page) {
-                            echo ' class="active"';
-                        }
-                        ?>><a href="?page=home">Home</a></li>
-                        <li<?php
-                        if ("signup" == $page) {
-                            echo ' class="active"';
-                        }
-                        ?>><a href="?page=signup">Sign Up</a></li>
-                        <li<?php
-                            if ("support" == $page) {
-                                echo ' class="active"';
-                            }
-                        ?>><a href="?page=support">Support</a></li>
+                        <li<?php getActivePage("home") ?>><a href="/home">Home</a></li>
+                        <li<?php getActivePage("signup") ?>><a href="/signup">Sign Up</a></li>
+                        <li<?php getActivePage("support") ?>><a href="/support">Support</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
@@ -45,6 +41,5 @@
                 </div>
             </div>
         </nav>
-
     </div>
 </div>
