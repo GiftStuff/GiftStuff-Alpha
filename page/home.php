@@ -1,4 +1,4 @@
-<?php include_once 'res/php/carousel.php'; ?>
+<?php include_once 'res/php/html/carousel.php'; ?>
 <div class="container marketing">
     <div class="row">
         <div class="col-lg-4">
