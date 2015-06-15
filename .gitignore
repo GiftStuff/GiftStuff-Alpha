@@ -1,2 +1,4 @@
-/nbproject/
-/protected/
+/nbproject
+/protected
+/vendor
+composer.lock

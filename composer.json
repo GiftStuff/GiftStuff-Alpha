@@ -1,0 +1,18 @@
+{
+    "name": "GiftStuff",
+    "description": "Description of project GiftStuff.",
+    "authors": [
+	{
+	    "name": "Brandon Staab",
+	    "email": "brandonstaab@gmail.com"
+	},
+	{
+	    "name": "Dillen Keegan",
+	    "email": "dkeega@gmail.com"
+	}
+    ],
+    "require": {
+	"google/recaptcha": "dev-master"
+    }
+}
+s
