@@ -1,12 +1,17 @@
 <?php
 
-function getActivePage($input) {
+function getActivePage($input, $glyph = null) {
     global $page;
     if ($input == $page) {
 	echo '<li class="active">';
     } else {
 	echo '<li>';
-    } echo '<a href=/' . $input . '>' . $input . '</a></li>';
+    }
+    echo '<a href=/' . strtolower(str_replace(' ', '', $input)) . '>';
+    if (isset($glyph)) {
+	echo '<span class="glyphicon glyphicon-' . $glyph . '"></span> ';
+    }
+    echo $input . '</a></li>';
 }
 ?>
 
@@ -31,12 +36,12 @@ function getActivePage($input) {
 		    </ul>
 		</li>
 		<?php echo getActivePage('Support') ?>
-		<li><a href="#">Page 3</a></li>
+		<?php echo getActivePage('About-Us') ?>
 	    </ul>
 
 	    <ul class="nav navbar-nav navbar-right">
-		<li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		<?php echo getActivePage('Sign Up', 'user') ?>
+		<?php echo getActivePage('Login', 'log-in') ?>
 	    </ul>
 	</div>
     </div>

@@ -2,10 +2,12 @@
 
 class connection {
 
-    public $servername = "localhost";
-    public $username = "root";
-    public $password = "";
-    public $dbname = "giftstuff";
+    function __construct() {
+	$this->servername = "localhost";
+	$this->username = "root";
+	$this->password = "file_get_contents('protected/database-pass.txt')";
+	$this->dbname = "giftstuff";
+    }
 
     final public static function connect() {
 	$this->connection = new mysqli($this->servername, $this->username, $this->password, $this->dbname);

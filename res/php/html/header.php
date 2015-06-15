@@ -1,3 +1,3 @@
 <div>
-    <nav><?php include_once('res/php/html/navigation.php') ?></nav>
+    <nav><?php require_once('res/php/html/navigation.php') ?></nav>
 </div>
