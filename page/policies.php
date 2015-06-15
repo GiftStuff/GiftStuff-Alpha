@@ -1,5 +1,5 @@
 <div class="page-header">
-    <h1>Policies<small> and stuff</small></h1>
+    <center><h1>Policies<small> and stuff</small></h1></center>
 </div>
 
 <div class="container-fluid">
@@ -10,13 +10,11 @@
 		<p>...</p>
 		<p><a class="btn btn-primary btn-lg pull-right" href="#" role="button">Learn more</a></p>
 	    </div>
-
 	    <div  id="privacy" class="jumbotron">
 		<h2>Privacy</h2>
 		<p>...</p>
 		<p><a class="btn btn-primary btn-lg pull-right" href="#" role="button">Learn more</a></p>
 	    </div>
-
 	    <div  id="terms" class="jumbotron">
 		<h2>Terms</h2>
 		<p>...</p>
