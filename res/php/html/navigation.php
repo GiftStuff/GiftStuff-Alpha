@@ -3,43 +3,41 @@
 function getActivePage($input) {
     global $page;
     if ($input == $page) {
-	echo ' class="active"';
-    }
+	echo '<li class="active">';
+    } else {
+	echo '<li>';
+    } echo '<a href=/' . $input . '>' . $input . '</a></li>';
 }
 ?>
-<div class="navbar-wrapper">
-    <div class="container">
-        <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Gift Stuff</a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li<?php getActivePage("home") ?>><a href="/home">Home</a></li>
-                        <li<?php getActivePage("signup") ?>><a href="/signup">Sign Up</a></li>
-                        <li<?php getActivePage("support") ?>><a href="/support">Support</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">Nav header</li>
-                                <li><a href="#">Separated link</a></li>
-                                <li><a href="#">One more separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+	<div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+	    </button>
+	    <a class="navbar-brand" href="#">GiftStuff</a>
+	</div>
+
+	<div class="collapse navbar-collapse" id="myNavbar">
+	    <ul class="nav navbar-nav">
+		<?php echo(getActivePage('Home')); ?>
+		<li class="dropdown">
+		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+		    <ul class="dropdown-menu">
+			<li><a href="#">Page 1-1</a></li>
+			<li><a href="#">Page 1-2</a></li>
+			<li><a href="#">Page 1-3</a></li>
+		    </ul>
+		</li>
+		<?php echo getActivePage('Support') ?>
+		<li><a href="#">Page 3</a></li>
+	    </ul>
+
+	    <ul class="nav navbar-nav navbar-right">
+		<li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	</div>
     </div>
-</div>
+</nav>
