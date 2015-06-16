@@ -1,4 +1,3 @@
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-    </div>
-</div><!-- /.carousel -->
+<div class="page-header">
+    <center><h1>Testing<small> a general testing page</small></h1></center>
+</div>
