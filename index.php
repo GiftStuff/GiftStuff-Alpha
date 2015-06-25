@@ -10,15 +10,13 @@
     <body>
         <header><?php include_once("res/php/header.php"); ?></header>
         <main>
-            <div>
-                <?php
-                if (file_exists('page/' . $page . '.php')) {
-                    include_once('page/' . $page . '.php');
-                } else {
-                    include_once('res/php/404.php');
-                }
-                ?>
-            </div>
+            <?php
+            if (file_exists('page/' . $page . '.php')) {
+                include_once('page/' . $page . '.php');
+            } else {
+                include_once('res/php/404.php');
+            }
+            ?>
         </main>
         <footer><?php include_once("res/php/footer.php"); ?></footer>
     </body>

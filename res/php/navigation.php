@@ -1,7 +1,6 @@
 <div class="navbar-wrapper">
     <div class="container">
-
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="set navbar navbar-inverse navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -20,21 +19,26 @@
                         }
                         ?>><a href="?page=home">Home</a></li>
                         <li<?php
+                        if ("events" == $page) {
+                            echo ' class="active"';
+                        }
+                        ?>><a href="?page=events">Events</a></li>
+                        <li<?php
                         if ("signup" == $page) {
                             echo ' class="active"';
                         }
                         ?>><a href="?page=signup">Sign Up</a></li>
                         <li<?php
-                            if ("support" == $page) {
-                                echo ' class="active"';
-                            }
+                        if ("support" == $page) {
+                            echo ' class="active"';
+                        }
                         ?>><a href="?page=support">Support</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profile <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                                <li><a href="?page=notifications">Notifications</a></li>
+                                <li><a href="#">Settings</a></li>
+                                <li><a href="#">Privacy</a></li>
                                 <li class="divider"></li>
                                 <li class="dropdown-header">Nav header</li>
                                 <li><a href="#">Separated link</a></li>
@@ -45,6 +49,5 @@
                 </div>
             </div>
         </nav>
-
     </div>
 </div>
