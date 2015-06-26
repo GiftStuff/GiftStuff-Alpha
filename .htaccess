@@ -1,6 +1,0 @@
-ErrorDocument 404 /home
-
-<IfModule mod_rewrite.c>
-    RewriteEngine on
-    RewriteRule ^([\w-]+)$ ?page=$1
-</IfModule>

@@ -1,4 +1,4 @@
-/nbproject
-/protected
 /vendor
-composer.lock
+/node_modules
+Homestead.yaml
+.env
