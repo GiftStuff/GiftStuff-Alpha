@@ -1,20 +1,19 @@
 <?php
 
-function getActivePage($input, $glyph = null) {
+/**
+ * @link http://getbootstrap.com/components/#glyphicons Bootstrap Glyph List
+ *
+ * @param string $name Name of the page to be added to navigation bar
+ * @param string $location Relative URL
+ * @param string $glyph [optional] A glyph from the glyph list to add an icon to the menu item
+ *
+ * @return string Navigation menu item
+ */
+function addPage($name, $location = null, $glyph = null) {
     global $page;
-    if ($input == $page) {
-	echo '<li class="active">';
-    } else {
-	echo '<li>';
-    }
-    echo '<a href=/' . strtolower(str_replace(' ', '', $input)) . '>';
-    if (isset($glyph)) {
-	echo '<span class="glyphicon glyphicon-' . $glyph . '"></span> ';
-    }
-    echo $input . '</a></li>';
+    return sprintf('<li%s><a href="/%s">%s%s</a></li>', $location == strtolower($page) ? ' class="active"' : '', isset($location) ? $location : $name, isset($glyph) ? '<span class="glyphicon glyphicon-' . $glyph . '"></span> ' : '', $name);
 }
 ?>
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
 	<div class="navbar-header">
@@ -23,25 +22,31 @@ function getActivePage($input, $glyph = null) {
 	    </button>
 	    <a class="navbar-brand" href="#">GiftStuff</a>
 	</div>
-
 	<div class="collapse navbar-collapse" id="myNavbar">
 	    <ul class="nav navbar-nav">
-<?php echo(getActivePage('Home')); ?>
+		<?php echo(addPage('Home')); ?>
 		<li class="dropdown">
-		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+		    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Test<span class="caret"></span></a>
 		    <ul class="dropdown-menu">
-			<li><a href="#">Page 1-1</a></li>
-			<li><a href="#">Page 1-2</a></li>
-			<li><a href="#">Page 1-3</a></li>
+			<?php
+			echo(addPage('1', 'test/1'));
+			echo (addPage('1', 'test/2'));
+			echo (addPage('3', 'test/3'));
+			echo (addPage('4', 'test/4'));
+			echo (addPage('5', 'test/5'));
+			?>
 		    </ul>
 		</li>
-		<?php echo getActivePage('Support') ?>
-<?php echo getActivePage('About-Us') ?>
+		<?php
+		echo addPage('Support');
+		echo addPage('About-Us');
+		?>
 	    </ul>
-
 	    <ul class="nav navbar-nav navbar-right">
-		<?php echo getActivePage('Sign Up', 'user') ?>
-<?php echo getActivePage('Login', 'log-in') ?>
+		<?php
+		echo addPage('Sign-Up', 'signup', 'user');
+		echo addPage('Login', 'login', 'log-in')
+		?>
 	    </ul>
 	</div>
     </div>

@@ -1,8 +1,5 @@
-<?php
+<div class="page-header">
+    <center><h1>About Us<small> and stuff</small></h1></center>
+</div>
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+<p>We don't have anything</p>
