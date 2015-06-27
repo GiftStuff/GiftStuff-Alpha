@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>Gift Stuff - @yield('title')</title>
+        <title>Gift Stuff - {{ $title }}</title>
         @include('includes/meta')
         @include('includes/styles')
         @include('includes/scripts')

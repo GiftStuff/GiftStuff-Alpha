@@ -14,7 +14,11 @@ if (isset(filter_input(INPUT_POST, 'g-recaptcha-response'))) {
 }
 ?>
 
+@extends('themes.master')
 
+@section('content')
+<?php $title = 'Login'; ?>
+@include('layouts/page-info')
 <div class="page-header">
     <center><h1>Login<small> to GiftStuff</small></h1></center>
 </div>
@@ -40,3 +44,4 @@ if (isset(filter_input(INPUT_POST, 'g-recaptcha-response'))) {
         <span class="col-md-1"></span>
     </div>
 </div>
+@endsection

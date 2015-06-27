@@ -1,7 +1,9 @@
-<div class="page-header">
-    <center><h1>Policies<small> and stuff</small></h1></center>
-</div>
+@extends('themes.master')
 
+@section('content')
+<?php $title = 'Policies'; ?>
+@include('layouts/page-info')
+@section('title', 'About Us')
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12">
@@ -23,3 +25,4 @@
         </div>
     </div>
 </div>
+@endsection

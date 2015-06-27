@@ -1,8 +1,11 @@
+@extends('themes.master')
+
+@section('content')
+<?php $title = 'Event'; ?>
+@include('layouts/page-info')
 <div class="container-fluid">
-
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-        <h1 class="page-header"> </h1>
-
+        <h1 class="page-header">Events</h1>
         <div class="row placeholders">
             <div class="col-xs-6 col-sm-3 placeholder">
                 <img data-src="holder.js/200x200/auto/sky" class="img-responsive" alt="Generic placeholder thumbnail">
@@ -25,7 +28,6 @@
                 <span class="text-muted">Something else</span>
             </div>
         </div>
-
         <h2 class="sub-header">Section title</h2>
         <div class="table-responsive">
             <table class="table table-striped">
@@ -155,5 +157,5 @@
             </table>
         </div>
     </div>
-
 </div>
+@endsection

@@ -1,8 +1,8 @@
 @extends('themes.master')
-@section('title', 'Home')
 
 @section('content')
-@include('layouts/carousel')
+<?php $title = 'Home'; ?>
+@include('layouts/page-info')
 <div class="container marketing">
     <div class="row">
         <div class="col-lg-4">
