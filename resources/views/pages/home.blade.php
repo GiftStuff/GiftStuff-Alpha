@@ -1,8 +1,8 @@
-@extends('layouts.master')
+@extends('themes.master')
 @section('title', 'Home')
 
 @section('content')
-@include('includes/carousel')
+@include('layouts/carousel')
 <div class="container marketing">
     <div class="row">
 	<div class="col-lg-4">
