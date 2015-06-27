@@ -4,4 +4,4 @@
 
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="icon" href="public/favicon.png">
+<link rel="icon" href="public/images/icon.png">
