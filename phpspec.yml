@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: GiftStuff
+        psr4_prefix: GiftStuff
+        src_path: app
