@@ -1,14 +1,15 @@
 <html>
     <head>
         <title>Gift Stuff - @yield('title')</title>
+	@include('includes/meta')
+	@include('includes/styles')
+	@include('includes/scripts')
     </head>
     <body>
-        @section('sidebar')
-	This is the master sidebar.
-        @show
-
-        <div class="container">
+	@include('includes/header')
+        <div>
             @yield('content')
         </div>
+	@include('includes/footer')
     </body>
 </html>

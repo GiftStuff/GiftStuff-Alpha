@@ -11,6 +11,12 @@
   |
  */
 
-Route::get('/{page}', function ($page = 'home') {
+/* General Routing */
+Route::any('/{page}', function ($page) {
     return view('pages/' . $page);
+});
+
+/* Default Page */
+Route::get('/', function () {
+    return view('pages/home');
 });
