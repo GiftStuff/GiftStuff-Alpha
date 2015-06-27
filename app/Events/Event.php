@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace GiftStuff\Events;
 
 abstract class Event
 {
