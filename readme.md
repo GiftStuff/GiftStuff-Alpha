@@ -16,6 +16,7 @@
 
 ### Creating an Issue
 Have a suggestion?  Found a bug?  Create an issue now!
+
 1. Make sure your issue hasn't already been answered or fixed.  Also think about whether your issue is a valid one before submitting it.
 	* Please do not open an issue to ask a question
 2. Go to [the issues page](http://github.com/GiftStuff/GiftStuff/issues).
