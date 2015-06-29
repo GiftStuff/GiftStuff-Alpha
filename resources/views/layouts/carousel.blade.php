@@ -1,3 +1,5 @@
+<!-- TODO: Find correct CDN for carousel                                     -->
+<link href="http://getbootstrap.com/examples/carousel/carousel.css" rel="stylesheet">
 <div id="carousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
