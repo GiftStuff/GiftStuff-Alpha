@@ -1,6 +1,7 @@
 <?php
-$siteKey = file_get_contents('protected/g-recaptcha/public.txt');
-$secret = file_get_contents('protected/g-recaptcha/private.txt');
+$siteKey = env("GOOGLE_RECAPTCHA_PUBLIC");
+$secret = env("GOOGLE_RECAPTCHA_PRIVATE");
+
 $recaptcha = new \ReCaptcha\ReCaptcha($secret);
 if (isset(filter_input(INPUT_POST, 'g-recaptcha-response'))) {
     $resp = $recaptcha->verify(filter_input(INPUT_POST, 'g-recaptcha-response'), filter_input(INPUT_SERVER, 'REMOTE_ADDR'));

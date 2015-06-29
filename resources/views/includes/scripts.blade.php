@@ -17,6 +17,6 @@
         m.parentNode.insertBefore(a, m);
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', '{{ $_ENV["GOOGLE_ANALYTICS_TRACKING_ID"] }}', 'auto');
+    ga('create', '{{ env("GOOGLE_ANALYTICS_TRACKING_ID") }}', 'auto');
     ga('send', 'pageview');
 </script>
