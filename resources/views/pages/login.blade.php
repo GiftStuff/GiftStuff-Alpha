@@ -1,18 +1,8 @@
 <?php
-$siteKey = env("GOOGLE_RECAPTCHA_PUBLIC");
-$secret = env("GOOGLE_RECAPTCHA_PRIVATE");
-
-$recaptcha = new \ReCaptcha\ReCaptcha($secret);
-if (isset(filter_input(INPUT_POST, 'g-recaptcha-response'))) {
-    $resp = $recaptcha->verify(filter_input(INPUT_POST, 'g-recaptcha-response'), filter_input(INPUT_SERVER, 'REMOTE_ADDR'));
-    if ($resp->isSuccess()) {
-        echo 'success';
-    } else {
-        echo 'declined';
-    }
-} else {
-    echo 'not set';
-}
+$rules = array(
+    // check if it works
+    'g-recaptcha-response' => 'required|recaptcha',
+);
 ?>
 
 @extends('themes.master')
@@ -37,7 +27,7 @@ if (isset(filter_input(INPUT_POST, 'g-recaptcha-response'))) {
                     <div class="checkbox">
                         <label><input type="checkbox" id='remeberMe' /> Remember me</label>
                     </div>
-                    <div class="g-recaptcha" data-sitekey="<?php echo($siteKey); ?>"></div>
+                    {!! Recaptcha::render() !!}
                     <button type="submit" class="btn btn-primary" />Login</button>
                 </div>
             </form>
