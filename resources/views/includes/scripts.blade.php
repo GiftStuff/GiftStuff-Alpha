@@ -1,10 +1,10 @@
 @include('errors/noscript')
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.0/holder.js"></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
+<script id="jquery" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
+<script id="holder" src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.8.0/holder.js"></script>
+<script id="twitter-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.js"></script>
+<script id="google-recaptcha" src="https://www.google.com/recaptcha/api.js"></script>
+<script id="google-analytics">
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
