@@ -8,7 +8,12 @@
 * A detailed changelog, intended for programmers found at [Giftstuff/commits](https://github.com/GiftStuff/GiftStuff/commits)
 * A basic changelog, intended for users found in changelog.md
 
-## [INSTALL](https://github.com/GiftStuff/GiftStuff/blob/master/install.md)
+## INSTALL
+
+1. Clone project
+2. Use composer to install dependencies
+    * include `dev` dependencies
+3. Set `.env` variables
 
 ## [LICENSE](https://github.com/GiftStuff/GiftStuff/blob/master/license.md)
 
