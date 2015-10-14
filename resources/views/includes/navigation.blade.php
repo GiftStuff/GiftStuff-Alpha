@@ -21,32 +21,11 @@
                 </li>
                 <li{!! Request::is( 'support') ? ' class="active"' : '' !!}><a href="/support">Support</a></li>
                 <li{!! Request::is( 'about-us') ? ' class="active"' : '' !!}><a href="/about-us">About-Us</a></li>
+                <li{!! Request::is( 'events') ? ' class="active"' : '' !!}><a href="/events">Events</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                @if (Auth::guest())
-                <li class="{{ (Request::is('auth/login') ? 'active' : '') }}"><a href="{!! URL::to('auth/login') !!}"><i class="glyphicon glyphicon-log-in"></i> Login</a></li>
-                <li class="{{ (Request::is('auth/register') ? 'active' : '') }}"><a href="{!! URL::to('auth/register') !!}">Register</a></li>
-                @else
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                       aria-expanded="false"><i class="glyphicon glyphicon-user"></i> {{ Auth::user()->name }} <i
-                            class="glyphicon glyphicon-menu-down"></i></a>
-                    <ul class="dropdown-menu" role="menu">
-                        @if(Auth::check())
-                        @if(Auth::user()->admin==1)
-                        <li>
-                            <a href="{!! URL::to('admin/dashboard') !!}"><i class="glyphicon glyphicon-user"></i> Dashboard</a>
-                        </li>
-                        @endif
-                        <li role="presentation" class="divider"></li>
-                        @endif
-                        <li>
-                            <a href="{!! URL::to('auth/logout') !!}"><i class="glyphicon glyphicon-log-out"></i> Logout</a>
-                        </li>
-                    </ul>
-                </li>
-                @endif
+                @include('includes/login')
             </ul>
         </div>
     </div>

@@ -6,19 +6,19 @@
 <div class="container marketing">
     <div class="row">
         <div class="col-lg-4">
-            <img class="img-circle" src="res/img/home/1.png" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="http://lorempixel.com/1400/1400/" alt="Generic placeholder image" width="140" height="140">
             <h2>Heading</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
             <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div>
         <div class="col-lg-4">
-            <img class="img-circle" src="res/img/home/2.png" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="http://lorempixel.com/1400/1400/" alt="Generic placeholder image" width="140" height="140">
             <h2>Heading</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
         </div>
         <div class="col-lg-4">
-            <img class="img-circle" src="res/img/home/3.png" alt="Generic placeholder image" width="140" height="140">
+            <img class="img-circle" src="http://lorempixel.com/1400/1400/" alt="Generic placeholder image" width="140" height="140">
             <h2>Heading</h2>
             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
@@ -32,7 +32,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" alt="500x500" src="res/img/home/4.png">
+            <img class="featurette-image img-responsive center-block" alt="500x500" src="http://lorempixel.com/500/500/">
         </div>
     </div>
 
@@ -43,7 +43,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-            <img class="featurette-image img-responsive center-block" alt="500x500" src="res/img/home/5.png">
+            <img class="featurette-image img-responsive center-block" alt="500x500" src="http://lorempixel.com/500/500/">
         </div>
     </div>
 
@@ -54,7 +54,7 @@
             <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5">
-            <img class="featurette-image img-responsive center-block" alt="500x500" src="res/img/home/6.png">
+            <img class="featurette-image img-responsive center-block" alt="500x500" src="http://lorempixel.com/500/500/">
         </div>
     </div>
 
